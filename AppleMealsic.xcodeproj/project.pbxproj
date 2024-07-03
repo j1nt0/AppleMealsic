@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C7B01FC2C35443C004D5B5F /* AppleMealsicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B01FB2C35443C004D5B5F /* AppleMealsicApp.swift */; };
+		3C7B01FE2C35443C004D5B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B01FD2C35443C004D5B5F /* ContentView.swift */; };
+		3C7B02002C35443F004D5B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B01FF2C35443F004D5B5F /* Assets.xcassets */; };
+		3C7B02032C35443F004D5B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B02022C35443F004D5B5F /* Preview Assets.xcassets */; };
+		3C7B02092C35443F004D5B5F /* AppleMealsic Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3C7B02082C35443F004D5B5F /* AppleMealsic Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3C7B020E2C35443F004D5B5F /* AppleMealsicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B020D2C35443F004D5B5F /* AppleMealsicApp.swift */; };
+		3C7B02102C35443F004D5B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B020F2C35443F004D5B5F /* ContentView.swift */; };
+		3C7B02122C354440004D5B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B02112C354440004D5B5F /* Assets.xcassets */; };
+		3C7B02152C354440004D5B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B02142C354440004D5B5F /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C7B020A2C35443F004D5B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C7B01F02C35443C004D5B5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C7B02072C35443F004D5B5F;
+			remoteInfo = "AppleMealsic Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C7B021B2C354440004D5B5F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3C7B02092C35443F004D5B5F /* AppleMealsic Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C7B01F82C35443C004D5B5F /* AppleMealsic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMealsic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7B01FB2C35443C004D5B5F /* AppleMealsicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMealsicApp.swift; sourceTree = "<group>"; };
+		3C7B01FD2C35443C004D5B5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3C7B01FF2C35443F004D5B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C7B02022C35443F004D5B5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C7B02082C35443F004D5B5F /* AppleMealsic Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleMealsic Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7B020D2C35443F004D5B5F /* AppleMealsicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMealsicApp.swift; sourceTree = "<group>"; };
+		3C7B020F2C35443F004D5B5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3C7B02112C354440004D5B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C7B02142C354440004D5B5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C7B01F52C35443C004D5B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7B02052C35443F004D5B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C7B01EF2C35443C004D5B5F = {
+			isa = PBXGroup;
+			children = (
+				3C7B01FA2C35443C004D5B5F /* AppleMealsic */,
+				3C7B020C2C35443F004D5B5F /* AppleMealsic Watch App */,
+				3C7B01F92C35443C004D5B5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C7B01F92C35443C004D5B5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B01F82C35443C004D5B5F /* AppleMealsic.app */,
+				3C7B02082C35443F004D5B5F /* AppleMealsic Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C7B01FA2C35443C004D5B5F /* AppleMealsic */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B01FB2C35443C004D5B5F /* AppleMealsicApp.swift */,
+				3C7B01FD2C35443C004D5B5F /* ContentView.swift */,
+				3C7B01FF2C35443F004D5B5F /* Assets.xcassets */,
+				3C7B02012C35443F004D5B5F /* Preview Content */,
+			);
+			path = AppleMealsic;
+			sourceTree = "<group>";
+		};
+		3C7B02012C35443F004D5B5F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B02022C35443F004D5B5F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3C7B020C2C35443F004D5B5F /* AppleMealsic Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B020D2C35443F004D5B5F /* AppleMealsicApp.swift */,
+				3C7B020F2C35443F004D5B5F /* ContentView.swift */,
+				3C7B02112C354440004D5B5F /* Assets.xcassets */,
+				3C7B02132C354440004D5B5F /* Preview Content */,
+			);
+			path = "AppleMealsic Watch App";
+			sourceTree = "<group>";
+		};
+		3C7B02132C354440004D5B5F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B02142C354440004D5B5F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C7B01F72C35443C004D5B5F /* AppleMealsic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7B021C2C354440004D5B5F /* Build configuration list for PBXNativeTarget "AppleMealsic" */;
+			buildPhases = (
+				3C7B01F42C35443C004D5B5F /* Sources */,
+				3C7B01F52C35443C004D5B5F /* Frameworks */,
+				3C7B01F62C35443C004D5B5F /* Resources */,
+				3C7B021B2C354440004D5B5F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C7B020B2C35443F004D5B5F /* PBXTargetDependency */,
+			);
+			name = AppleMealsic;
+			productName = AppleMealsic;
+			productReference = 3C7B01F82C35443C004D5B5F /* AppleMealsic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C7B02072C35443F004D5B5F /* AppleMealsic Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7B02182C354440004D5B5F /* Build configuration list for PBXNativeTarget "AppleMealsic Watch App" */;
+			buildPhases = (
+				3C7B02042C35443F004D5B5F /* Sources */,
+				3C7B02052C35443F004D5B5F /* Frameworks */,
+				3C7B02062C35443F004D5B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppleMealsic Watch App";
+			productName = "AppleMealsic Watch App";
+			productReference = 3C7B02082C35443F004D5B5F /* AppleMealsic Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C7B01F02C35443C004D5B5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3C7B01F72C35443C004D5B5F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3C7B02072C35443F004D5B5F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 3C7B01F32C35443C004D5B5F /* Build configuration list for PBXProject "AppleMealsic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C7B01EF2C35443C004D5B5F;
+			productRefGroup = 3C7B01F92C35443C004D5B5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C7B01F72C35443C004D5B5F /* AppleMealsic */,
+				3C7B02072C35443F004D5B5F /* AppleMealsic Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C7B01F62C35443C004D5B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7B02032C35443F004D5B5F /* Preview Assets.xcassets in Resources */,
+				3C7B02002C35443F004D5B5F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7B02062C35443F004D5B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7B02152C354440004D5B5F /* Preview Assets.xcassets in Resources */,
+				3C7B02122C354440004D5B5F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C7B01F42C35443C004D5B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7B01FE2C35443C004D5B5F /* ContentView.swift in Sources */,
+				3C7B01FC2C35443C004D5B5F /* AppleMealsicApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7B02042C35443F004D5B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7B02102C35443F004D5B5F /* ContentView.swift in Sources */,
+				3C7B020E2C35443F004D5B5F /* AppleMealsicApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C7B020B2C35443F004D5B5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C7B02072C35443F004D5B5F /* AppleMealsic Watch App */;
+			targetProxy = 3C7B020A2C35443F004D5B5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C7B02162C354440004D5B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C7B02172C354440004D5B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3C7B02192C354440004D5B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMealsic Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = C5ZC74W3Z4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AppleMealsic;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = private.AppleMealsic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = private.AppleMealsic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		3C7B021A2C354440004D5B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMealsic Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = C5ZC74W3Z4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AppleMealsic;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = private.AppleMealsic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = private.AppleMealsic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		3C7B021D2C354440004D5B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMealsic/Preview Content\"";
+				DEVELOPMENT_TEAM = C5ZC74W3Z4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AppleMealsic;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = private.AppleMealsic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C7B021E2C354440004D5B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppleMealsic/Preview Content\"";
+				DEVELOPMENT_TEAM = C5ZC74W3Z4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AppleMealsic;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = private.AppleMealsic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C7B01F32C35443C004D5B5F /* Build configuration list for PBXProject "AppleMealsic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7B02162C354440004D5B5F /* Debug */,
+				3C7B02172C354440004D5B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7B02182C354440004D5B5F /* Build configuration list for PBXNativeTarget "AppleMealsic Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7B02192C354440004D5B5F /* Debug */,
+				3C7B021A2C354440004D5B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7B021C2C354440004D5B5F /* Build configuration list for PBXNativeTarget "AppleMealsic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7B021D2C354440004D5B5F /* Debug */,
+				3C7B021E2C354440004D5B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C7B01F02C35443C004D5B5F /* Project object */;
+}
