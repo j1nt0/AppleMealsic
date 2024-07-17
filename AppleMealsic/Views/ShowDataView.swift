@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct ShowDataView: View {
     
@@ -22,6 +23,9 @@ struct ShowDataView: View {
     @State private var volumeValue: Double = 40
     @State var selectedNumber = 0
     
+    @State private var selectedPhoto: PhotosPickerItem? = nil
+    @State var uiImage: UIImage?
+    
     var body: some View {
         GeometryReader { geometry in
             
@@ -29,12 +33,35 @@ struct ShowDataView: View {
             let height = geometry.size.height
             
             ZStack {
-                Color("MusicBasicBackgroundColor")
+                if uiImage != nil {
+                    Color(.black).opacity(0.7)
+                    Image(uiImage: uiImage!)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .blur(radius: 50)
+                        .frame(minWidth: width)
+                } else {
+                    Color("MusicBasicBackgroundColor")
+                }
                 VStack(spacing: 0) {
                     // 상단 공백
                     Spacer().frame(height: height*0.15)
                     // 상단 뷰
                     TopView(width: width)
+                        .onChange(of: selectedPhoto) { result in
+                                    Task {
+                                        do {
+                                            if let data = try await selectedPhoto?.loadTransferable(type: Data.self) {
+                                                if let uiImage = UIImage(data: data) {
+                                                    self.uiImage = uiImage
+                                                }
+                                            }
+                                        } catch {
+                                            print(error.localizedDescription)
+                                            selectedPhoto = nil
+                                        }
+                                    }
+                                }
                     // 메뉴 뷰
                     ScrollViewReader { proxy in
                         MenuView(width: width, height: height, time: $timeValue)
@@ -95,8 +122,7 @@ struct ShowDataView: View {
     func TopView(width: CGFloat) -> some View {
         return HStack(spacing: 0) {
             // image
-            RoundedRectangle(cornerRadius: 7)
-                .frame(width: 72, height: 72)
+            PhotoPickerThumbnail()
             // space
             Spacer().frame(width: width*0.03)
             // name
@@ -271,6 +297,35 @@ struct ShowDataView: View {
                     Spacer().frame(height: height*0.03)
                 }
             }
+        }
+    }
+    
+    func PhotoPickerThumbnail() -> some View {
+        return ZStack {
+            PhotosPicker(
+                selection: $selectedPhoto,
+//                matching: .images,
+                matching: .any(of: [.images, .not(.livePhotos)]),
+                photoLibrary: .shared()) {
+                    if uiImage != nil {
+                        Image(uiImage: uiImage!)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 72, height: 72)
+                            .clipShape(RoundedRectangle(cornerRadius: 7))
+                            // 서연쉐도우
+                            .shadow(color: .black.opacity(0.2), radius: 15, y: 2)
+                    } else {
+                        Image(.appleMealsic)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 72, height: 72)
+                            .clipShape(RoundedRectangle(cornerRadius: 7))
+//                            .grayscale(1)
+                            // 서연쉐도우
+                            .shadow(color: .black.opacity(0.2), radius: 15, y: 2)
+                    }
+                }
         }
     }
 }
